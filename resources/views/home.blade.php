@@ -26,10 +26,11 @@
         <h4 class="card-title">Dashboard</h4>
     </div>
     <div class="card-body">
-       <h1>{{ $chart1->options['chart_title'] }}</h1>
+         <h1>{{ $chart1->options['chart_title'] }}</h1>
                     {!! $chart1->renderHtml() !!}
     </div>
 </section>
+
 @endsection
 
 @section('scripts')
