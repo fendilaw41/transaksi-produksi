@@ -29,7 +29,7 @@
                                 <div class="form-group">
                                     <div class="controls">
                                         <label>Tanggal Transaksi</label>
-                                        <input type="date" value="{{ old('tanggal_transaksi') }}" class="form-control" required name="tanggal_transaksi">
+                                        <input type="date" value="{{ old('tanggal_transaksi') }}" class="form-control" id="tanggal_transaksi"  required name="tanggal_transaksi">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -73,6 +73,14 @@
  <script src="/app-assets/vendors/js/forms/select/select2.full.min.js"></script>
  <script src="/app-assets/js/scripts/forms/select/form-select2.js"></script>
  <script type="text/javascript">
+    $(document).ready(function(){
+        Date.prototype.toDateInputValue = (function() {
+            var local = new Date(this);
+            local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
+            return local.toJSON().slice(0,10);
+        });
+         $('#tanggal_transaksi').val(new Date().toDateInputValue());
+    })
     // select2 Karyawan
       $('#karyawan_id').select2({
             placeholder: '--Pilih Karyawan--'

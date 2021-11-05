@@ -16,7 +16,7 @@ class CreateTransaksisTable extends Migration
         Schema::create('transaksis', function (Blueprint $table) {
             $table->id();
             $table->foreignId('karyawan_id')->constrained('karyawans');
-            $table->datetime('tanggal_transaksi');
+            $table->date('tanggal_transaksi');
             $table->foreignId('lokasi_id')->constrained('lokasis');
             $table->foreignId('item_id')->constrained('items');
             $table->integer('qty');

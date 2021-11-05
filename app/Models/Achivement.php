@@ -9,6 +9,7 @@ class Achivement extends Model
 {
     use HasFactory;
 
+    
      public function getCreatedAtAttribute()
     {
         return \Carbon\Carbon::parse($this->attributes['created_at'])->format('Y-m-d H:i:s');

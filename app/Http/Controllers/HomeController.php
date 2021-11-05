@@ -42,7 +42,7 @@ class HomeController extends Controller
             'aggregate_function'    => 'count',
             'filter_field'          => 'tanggal_transaksi',
             'filter_days'           => '30',
-            'group_by_field_format' => 'Y-m-d H:i:s',
+            'group_by_field_format' => 'd-m-Y',
             'column_class'          => 'col-md-6',
             'entries_number'        => '5',
             'translation_key'       => 'user',

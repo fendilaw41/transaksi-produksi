@@ -32,7 +32,7 @@ class Transaksi extends Model
 
     public function getTanggalTransaksiAttribute()
     {
-    	return \Carbon\Carbon::parse($this->attributes['tanggal_transaksi'])->format('Y-m-d H:i:s');
+    	return \Carbon\Carbon::parse($this->attributes['tanggal_transaksi'])->format('d-m-Y');
     }
 
 

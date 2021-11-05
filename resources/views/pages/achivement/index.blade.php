@@ -61,7 +61,7 @@
                     <div class="modal-body">
                         <label>Kode: </label>
                         <div class="form-group">
-                            <input type="text" required placeholder="Kode" id="kode" name="kode" class="form-control">
+                            <input type="text" required maxlength="4" placeholder="Kode" id="kode" name="kode" class="form-control">
                         </div>
                         <label>Time From: </label>
                         <div class="form-group">
@@ -101,7 +101,7 @@
                   <div class="modal-body">
                         <label>Kode: </label>
                         <div class="form-group">
-                            <input type="text" required placeholder="Kode" id="edit_kode" name="kode" class="form-control">
+                            <input type="text" required maxLength="4" placeholder="Kode" id="edit_kode" name="kode" class="form-control">
                         </div>
                         <label>Time From: </label>
                         <div class="form-group">

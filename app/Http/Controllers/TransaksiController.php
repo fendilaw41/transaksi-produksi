@@ -15,6 +15,7 @@ class TransaksiController extends Controller
     {
     	$tanggal = $request->tanggal_transaksi;
     	$lokasi_cari = $request->lokasi;
+        $ldate = date('Y-m-d');
 
         $transaksi = Transaksi::when($tanggal, function($query, $tanggal) {
             return $query->where('tanggal_transaksi', 'like', '%'.$tanggal.'%');
@@ -22,7 +23,7 @@ class TransaksiController extends Controller
             return $query->where('lokasi_id', 'like', '%'.$lokasi_cari.'%');
         })->with(['karyawan', 'lokasi', 'item'])->latest()->get();
 
-    	$item = Item::latest()->get();
+    	 $item = Item::latest()->get();
     	$lokasi = Lokasi::latest()->get();
 
     	return view('pages.transaksi.index', compact('transaksi', 'item', 'lokasi', 'tanggal', 'lokasi_cari'));

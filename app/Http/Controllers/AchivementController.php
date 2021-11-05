@@ -10,7 +10,7 @@ class AchivementController extends Controller
 {
       public function index()
     {
-        $achiv = Achivement::with(['item'])->latest()->get();
+        $achiv = Achivement::latest()->get();
 
         return response()->json([
             'status' => true,

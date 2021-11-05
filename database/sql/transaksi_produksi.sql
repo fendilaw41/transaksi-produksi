@@ -11,7 +11,7 @@
  Target Server Version : 50724
  File Encoding         : 65001
 
- Date: 05/11/2021 17:40:16
+ Date: 05/11/2021 19:59:32
 */
 
 SET NAMES utf8mb4;
@@ -34,19 +34,19 @@ CREATE TABLE `achivements`  (
 -- ----------------------------
 -- Records of achivements
 -- ----------------------------
-INSERT INTO `achivements` VALUES (1, 'A001', '07:31:00', '08:30:00', '2021-11-05 17:39:24', '2021-11-05 17:39:24');
-INSERT INTO `achivements` VALUES (2, 'A002', '08:31:00', '09:30:00', '2021-11-05 17:39:24', '2021-11-05 17:39:24');
-INSERT INTO `achivements` VALUES (3, 'A003', '09:31:00', '10:30:00', '2021-11-05 17:39:24', '2021-11-05 17:39:24');
-INSERT INTO `achivements` VALUES (4, 'A004', '10:31:00', '11:30:00', '2021-11-05 17:39:24', '2021-11-05 17:39:24');
-INSERT INTO `achivements` VALUES (5, 'A005', '11:31:00', '12:30:00', '2021-11-05 17:39:24', '2021-11-05 17:39:24');
-INSERT INTO `achivements` VALUES (6, 'A006', '12:31:00', '13:30:00', '2021-11-05 17:39:24', '2021-11-05 17:39:24');
-INSERT INTO `achivements` VALUES (7, 'A007', '13:31:00', '14:30:00', '2021-11-05 17:39:24', '2021-11-05 17:39:24');
-INSERT INTO `achivements` VALUES (8, 'A008', '14:31:00', '15:30:00', '2021-11-05 17:39:24', '2021-11-05 17:39:24');
-INSERT INTO `achivements` VALUES (9, 'A009', '15:31:00', '16:30:00', '2021-11-05 17:39:24', '2021-11-05 17:39:24');
-INSERT INTO `achivements` VALUES (10, 'A010', '16:31:00', '17:30:00', '2021-11-05 17:39:24', '2021-11-05 17:39:24');
-INSERT INTO `achivements` VALUES (11, 'A011', '17:31:00', '18:30:00', '2021-11-05 17:39:24', '2021-11-05 17:39:24');
-INSERT INTO `achivements` VALUES (12, 'A012', '18:31:00', '19:30:00', '2021-11-05 17:39:24', '2021-11-05 17:39:24');
-INSERT INTO `achivements` VALUES (13, 'A013', '19:31:00', '20:30:00', '2021-11-05 17:39:24', '2021-11-05 17:39:24');
+INSERT INTO `achivements` VALUES (1, 'A001', '07:31:00', '08:30:00', '2021-11-05 19:59:13', '2021-11-05 19:59:13');
+INSERT INTO `achivements` VALUES (2, 'A002', '08:31:00', '09:30:00', '2021-11-05 19:59:13', '2021-11-05 19:59:13');
+INSERT INTO `achivements` VALUES (3, 'A003', '09:31:00', '10:30:00', '2021-11-05 19:59:13', '2021-11-05 19:59:13');
+INSERT INTO `achivements` VALUES (4, 'A004', '10:31:00', '11:30:00', '2021-11-05 19:59:13', '2021-11-05 19:59:13');
+INSERT INTO `achivements` VALUES (5, 'A005', '11:31:00', '12:30:00', '2021-11-05 19:59:13', '2021-11-05 19:59:13');
+INSERT INTO `achivements` VALUES (6, 'A006', '12:31:00', '13:30:00', '2021-11-05 19:59:13', '2021-11-05 19:59:13');
+INSERT INTO `achivements` VALUES (7, 'A007', '13:31:00', '14:30:00', '2021-11-05 19:59:13', '2021-11-05 19:59:13');
+INSERT INTO `achivements` VALUES (8, 'A008', '14:31:00', '15:30:00', '2021-11-05 19:59:13', '2021-11-05 19:59:13');
+INSERT INTO `achivements` VALUES (9, 'A009', '15:31:00', '16:30:00', '2021-11-05 19:59:13', '2021-11-05 19:59:13');
+INSERT INTO `achivements` VALUES (10, 'A010', '16:31:00', '17:30:00', '2021-11-05 19:59:13', '2021-11-05 19:59:13');
+INSERT INTO `achivements` VALUES (11, 'A011', '17:31:00', '18:30:00', '2021-11-05 19:59:13', '2021-11-05 19:59:13');
+INSERT INTO `achivements` VALUES (12, 'A012', '18:31:00', '19:30:00', '2021-11-05 19:59:13', '2021-11-05 19:59:13');
+INSERT INTO `achivements` VALUES (13, 'A013', '19:31:00', '20:30:00', '2021-11-05 19:59:13', '2021-11-05 19:59:13');
 
 -- ----------------------------
 -- Table structure for failed_jobs
@@ -84,10 +84,10 @@ CREATE TABLE `items`  (
 -- ----------------------------
 -- Records of items
 -- ----------------------------
-INSERT INTO `items` VALUES (1, 'M001', 'Bolpen', '2021-11-05 17:39:23', '2021-11-05 17:39:23');
-INSERT INTO `items` VALUES (2, 'M002', 'Pensil', '2021-11-05 17:39:23', '2021-11-05 17:39:23');
-INSERT INTO `items` VALUES (3, 'M003', 'Penghapus', '2021-11-05 17:39:23', '2021-11-05 17:39:23');
-INSERT INTO `items` VALUES (4, 'M004', 'Spidol', '2021-11-05 17:39:23', '2021-11-05 17:39:23');
+INSERT INTO `items` VALUES (1, 'M001', 'Bolpen', '2021-11-05 19:59:13', '2021-11-05 19:59:13');
+INSERT INTO `items` VALUES (2, 'M002', 'Pensil', '2021-11-05 19:59:13', '2021-11-05 19:59:13');
+INSERT INTO `items` VALUES (3, 'M003', 'Penghapus', '2021-11-05 19:59:13', '2021-11-05 19:59:13');
+INSERT INTO `items` VALUES (4, 'M004', 'Spidol', '2021-11-05 19:59:13', '2021-11-05 19:59:13');
 
 -- ----------------------------
 -- Table structure for karyawans
@@ -106,9 +106,9 @@ CREATE TABLE `karyawans`  (
 -- ----------------------------
 -- Records of karyawans
 -- ----------------------------
-INSERT INTO `karyawans` VALUES (1, '10001', 'Agus', 'Jakarta', '2021-11-05 17:39:23', '2021-11-05 17:39:23');
-INSERT INTO `karyawans` VALUES (2, '10002', 'Asep', 'Purbalingga', '2021-11-05 17:39:23', '2021-11-05 17:39:23');
-INSERT INTO `karyawans` VALUES (3, '10003', 'Jajang', 'Subang', '2021-11-05 17:39:23', '2021-11-05 17:39:23');
+INSERT INTO `karyawans` VALUES (1, '10001', 'Agus', 'Jakarta', '2021-11-05 19:59:13', '2021-11-05 19:59:13');
+INSERT INTO `karyawans` VALUES (2, '10002', 'Asep', 'Purbalingga', '2021-11-05 19:59:13', '2021-11-05 19:59:13');
+INSERT INTO `karyawans` VALUES (3, '10003', 'Jajang', 'Subang', '2021-11-05 19:59:13', '2021-11-05 19:59:13');
 
 -- ----------------------------
 -- Table structure for lokasis
@@ -126,10 +126,10 @@ CREATE TABLE `lokasis`  (
 -- ----------------------------
 -- Records of lokasis
 -- ----------------------------
-INSERT INTO `lokasis` VALUES (1, 'L001', 'Lokasi 1', '2021-11-05 17:39:24', '2021-11-05 17:39:24');
-INSERT INTO `lokasis` VALUES (2, 'L002', 'Lokasi 2', '2021-11-05 17:39:24', '2021-11-05 17:39:24');
-INSERT INTO `lokasis` VALUES (3, 'L003', 'Lokasi 3', '2021-11-05 17:39:24', '2021-11-05 17:39:24');
-INSERT INTO `lokasis` VALUES (4, 'L004', 'Lokasi 4', '2021-11-05 17:39:24', '2021-11-05 17:39:24');
+INSERT INTO `lokasis` VALUES (1, 'L001', 'Lokasi 1', '2021-11-05 19:59:13', '2021-11-05 19:59:13');
+INSERT INTO `lokasis` VALUES (2, 'L002', 'Lokasi 2', '2021-11-05 19:59:13', '2021-11-05 19:59:13');
+INSERT INTO `lokasis` VALUES (3, 'L003', 'Lokasi 3', '2021-11-05 19:59:13', '2021-11-05 19:59:13');
+INSERT INTO `lokasis` VALUES (4, 'L004', 'Lokasi 4', '2021-11-05 19:59:13', '2021-11-05 19:59:13');
 
 -- ----------------------------
 -- Table structure for migrations
@@ -213,10 +213,10 @@ CREATE TABLE `plannings`  (
 -- ----------------------------
 -- Records of plannings
 -- ----------------------------
-INSERT INTO `plannings` VALUES (1, 1, 10, 20.00, '2021-11-05 17:39:24', '2021-11-05 17:39:24');
-INSERT INTO `plannings` VALUES (2, 2, 15, 30.00, '2021-11-05 17:39:24', '2021-11-05 17:39:24');
-INSERT INTO `plannings` VALUES (3, 3, 12, 24.00, '2021-11-05 17:39:24', '2021-11-05 17:39:24');
-INSERT INTO `plannings` VALUES (4, 4, 14, 28.00, '2021-11-05 17:39:24', '2021-11-05 17:39:24');
+INSERT INTO `plannings` VALUES (1, 1, 10, 20.00, '2021-11-05 19:59:13', '2021-11-05 19:59:13');
+INSERT INTO `plannings` VALUES (2, 2, 15, 30.00, '2021-11-05 19:59:13', '2021-11-05 19:59:13');
+INSERT INTO `plannings` VALUES (3, 3, 12, 24.00, '2021-11-05 19:59:13', '2021-11-05 19:59:13');
+INSERT INTO `plannings` VALUES (4, 4, 14, 28.00, '2021-11-05 19:59:13', '2021-11-05 19:59:13');
 
 -- ----------------------------
 -- Table structure for transaksis
@@ -225,7 +225,7 @@ DROP TABLE IF EXISTS `transaksis`;
 CREATE TABLE `transaksis`  (
   `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
   `karyawan_id` bigint(20) UNSIGNED NOT NULL,
-  `tanggal_transaksi` datetime NOT NULL,
+  `tanggal_transaksi` date NOT NULL,
   `lokasi_id` bigint(20) UNSIGNED NOT NULL,
   `item_id` bigint(20) UNSIGNED NOT NULL,
   `qty` int(11) NOT NULL,
@@ -239,12 +239,14 @@ CREATE TABLE `transaksis`  (
   CONSTRAINT `transaksis_item_id_foreign` FOREIGN KEY (`item_id`) REFERENCES `items` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   CONSTRAINT `transaksis_karyawan_id_foreign` FOREIGN KEY (`karyawan_id`) REFERENCES `karyawans` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   CONSTRAINT `transaksis_lokasi_id_foreign` FOREIGN KEY (`lokasi_id`) REFERENCES `lokasis` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of transaksis
 -- ----------------------------
-INSERT INTO `transaksis` VALUES (1, 1, '2021-11-05 17:39:24', 1, 1, 10, '2021-11-05 17:39:24', '2021-11-05 17:39:24', NULL);
+INSERT INTO `transaksis` VALUES (1, 1, '2021-11-05', 1, 1, 10, '2021-11-05 19:59:13', '2021-11-05 19:59:13', NULL);
+INSERT INTO `transaksis` VALUES (2, 1, '2021-11-05', 1, 1, 50, '2021-11-05 19:59:13', '2021-11-05 19:59:13', NULL);
+INSERT INTO `transaksis` VALUES (3, 1, '2021-11-05', 2, 2, 90, '2021-11-05 19:59:13', '2021-11-05 19:59:13', NULL);
 
 -- ----------------------------
 -- Table structure for users
@@ -266,6 +268,6 @@ CREATE TABLE `users`  (
 -- ----------------------------
 -- Records of users
 -- ----------------------------
-INSERT INTO `users` VALUES (1, 'admin', 'admin@gmail.com', NULL, '$2y$10$ksf6Pj0UBKMoP/z/avWTvOH2ZQYtybxI2eAao85lX9LCG/6Y18aAi', NULL, '2021-11-05 17:39:23', '2021-11-05 17:39:23');
+INSERT INTO `users` VALUES (1, 'admin', 'admin@gmail.com', NULL, '$2y$10$FVIRN3RaTjFybcP4WYc9luvetfIN8169siPIhj9ayK.2x.O0pwJFm', NULL, '2021-11-05 19:59:13', '2021-11-05 19:59:13');
 
 SET FOREIGN_KEY_CHECKS = 1;
