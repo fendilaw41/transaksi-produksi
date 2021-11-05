@@ -97,8 +97,8 @@
 		                    <td><span class="invoice-customer">{{ $data->karyawan->npk ?? '' }}</span></td>
 		                    <td>
 		                        <div class="invoice-action">
-		                            <a href="{{ route('transaksi.show', $data->id) }}" class="invoice-action-view mr-1">
-		                                <i class="bx bx-show-alt"></i>
+		                            <a href="{{ route('transaksi.show', $data->id) }}" class="iinvoice-action-edit cursor-pointer">
+		                                <i class="bx bx-show"></i>
 		                            </a>
 		                            <a href="{{ route('transaksi.edit', $data->id) }}" class="invoice-action-edit cursor-pointer">
 		                                <i class="bx bx-edit"></i>
@@ -106,7 +106,7 @@
 		                            <a onclick="deleteData()" class="invoice-action-edit cursor-pointer">
 		                                <i class="bx bx-trash"></i>
 		                            </a>
-		                             <form id="deleteTransaksi" action="{{ route('transaksi.delete', ['id' => $data->id]) }}" method="POST" class="d-none">
+		                             <form id="deleteTransaksi" action="{{ route('transaksi.delete', ['id' => $data->id]) }}" method="POST" class="d-block d-none">
 	                                    @csrf
 	                                  </form>
 		                        </div>

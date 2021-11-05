@@ -1,7 +1,7 @@
  <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
         <div class="navbar-header">
             <ul class="nav navbar-nav flex-row">
-                <li class="nav-item mr-auto"><a class="navbar-brand" href="/html/ltr/vertical-menu-template/index.html">
+                <li class="nav-item mr-auto"><a class="navbar-brand" href="{{ url('/') }}">
                         <div class="brand-logo">
                             <svg class="logo" width="26px" height="26px" viewbox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <title>icon</title>
@@ -30,7 +30,7 @@
                                 </g>
                             </svg>
                         </div>
-                        <h2 class="brand-text mb-0">Frest</h2>
+                        <h2 class="brand-text mb-0">Produksi</h2>
                     </a></li>
                 <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="bx bx-x d-block d-xl-none font-medium-4 primary"></i><i class="toggle-icon bx bx-disc font-medium-4 d-none d-xl-block primary" data-ticon="bx-disc"></i></a></li>
             </ul>
@@ -41,7 +41,22 @@
               
                 <li class=" navigation-header text-truncate"><span data-i18n="Apps">Produksi</span>
                 </li>
-                <li class=" nav-item"><a href="{{route('home')}}"><i class="menu-livicon" data-icon="home"></i><span class="menu-title text-truncate" data-i18n="Email">Dashboard</span></a>
+                <li class=" nav-item"><a href="{{route('dashboard')}}"><i class="menu-livicon" data-icon="home"></i><span class="menu-title text-truncate" data-i18n="Email">Dashboard</span></a>
+
+                </li>
+                 <li class=" nav-item"><a href="#"><i class="menu-livicon" data-icon="box"></i><span class="menu-title text-truncate" data-i18n="Invoice">Data Master</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="{{ route('item.index') }}"><i class="bx bx-right-arrow-alt"></i><span class="menu-item text-truncate" data-i18n="Input List">Item</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="{{ route('karyawan.index') }}"><i class="bx bx-right-arrow-alt"></i><span class="menu-item text-truncate" data-i18n="View">Karyawan</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="{{ route('lokasi.index') }}"><i class="bx bx-right-arrow-alt"></i><span class="menu-item text-truncate" data-i18n="View">Lokasi</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="{{ route('planning.index') }}"><i class="bx bx-right-arrow-alt"></i><span class="menu-item text-truncate" data-i18n="View">Planning</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="{{ route('achivement.index') }}"><i class="bx bx-right-arrow-alt"></i><span class="menu-item text-truncate" data-i18n="View">Achivement</span></a>
+                        </li>
+                    </ul>
                 </li>
                 <li class=" nav-item"><a href="#"><i class="menu-livicon" data-icon="notebook"></i><span class="menu-title text-truncate" data-i18n="Invoice">Transaksi</span></a>
                     <ul class="menu-content">

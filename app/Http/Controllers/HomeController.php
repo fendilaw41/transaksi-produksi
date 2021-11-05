@@ -7,24 +7,19 @@ use Carbon\Carbon;
 use LaravelDaily\LaravelCharts\Classes\LaravelChart;
 use DB;
 use App\Models\Achivement;
+use App\Models\Transaksi;
+use App\Models\Item;
+use App\Models\Karyawan;
+use App\Models\Planning;
 
 class HomeController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
     public function __construct()
     {
         $this->middleware('auth');
     }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
+    /** DASHBOARD **/
     public function index()
     {
         // $time = array();
@@ -48,13 +43,35 @@ class HomeController extends Controller
             'filter_field'          => 'tanggal_transaksi',
             'filter_days'           => '30',
             'group_by_field_format' => 'Y-m-d H:i:s',
-            'column_class'          => 'col-md-12',
+            'column_class'          => 'col-md-6',
             'entries_number'        => '5',
             'translation_key'       => 'user',
             'continuous_time'       => true,
         ];
 
         $chart1 = new LaravelChart($chart_options);
-        return view('home', compact('chart1'));
+
+        $transaksi_count = Transaksi::count();
+        $item_count = Item::count();
+        $karyawan_count = Karyawan::count();
+
+        $transaksi_qty = Transaksi::whereHas('item', function($q){
+        return $q->where('item_id', '=', 1);
+          })->sum('qty');
+
+        $transaksi_item = Item::with(['transaksi'])->withCount('transaksi')->get();
+
+        $planning = Planning::with(['item'])->get();
+
+        $data = array (
+            'chart1' => $chart1,
+            'transaksi_count' => $transaksi_count,
+            'item_count' => $item_count,
+            'karyawan_count' => $karyawan_count,
+            'transaksi_item' => $transaksi_item,
+            'planning' => $planning,
+        );
+
+        return view('home', $data);
     }
 }

@@ -60,7 +60,10 @@
                                         <div class="card-header pb-1">
                                             <div class="card-title">
                                                 <h4 class="text-center mb-2">Welcome Back</h4>
+
                                             </div>
+                                             <small>email: admin@gmail.com</small>
+                                             <small>password: admin</small>
                                         </div>
                                         <div class="card-body">
                                         
